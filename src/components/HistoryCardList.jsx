@@ -5,7 +5,7 @@ const HistoryCardList = ({historyList}) => {
     <div className="history">
       <h2>History</h2>
         <div className="h-line"></div>
-        {historyList.map( (data) =>
+        {historyList?.map( (data) =>
           <HistoryCard data = {data}/>
          )}
       </div>
