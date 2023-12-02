@@ -13,13 +13,13 @@ function App() {
   useEffect( ()=>{
     
     setItems(JSON.parse(localStorage.getItem("items")));
-    
+    console.log("getting the state")
   },[]);
 
   useEffect(() => {
     
     localStorage.setItem("items", JSON.stringify(items));
-    
+    console.log("setting state")
   }, [items]);
 
   return (
